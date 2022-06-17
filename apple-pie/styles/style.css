@@ -6,8 +6,89 @@
 html,
 body {
   font-family: 'Montserrat', sans-serif;
-  font-weight: normal;
-  font-size: 10px;
-  line-height: 1;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
   color:#000;
+}
+
+/* Shared */
+.container {
+  max-width:800px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.recipe__article {
+  padding:2.54rem 0;
+  margin:0 2.54rem;
+  border-bottom:1px solid #cccc; 
+}
+
+.recipe__article-title {
+  font-size:1.2rem; 
+  font-weight: 500;
+}
+.recipe__article-title + .recipe__article-list {
+  margin-top:1.5rem;
+}
+.recipe__article-list-item {
+  font-size:1rem;
+}
+.recipe__article-list-item + .recipe__article-list-item {
+  margin-top: 0.375rem;
+}
+
+/* Recipe Image*/
+.recipe__figure {
+  position: relative;
+  height:100%;
+  max-height: 400px;
+  overflow: hidden;
+}
+.recipe__img {
+  width:100%;
+  height:auto;
+}
+.recipe__text {
+  position:absolute;
+  top:0;
+  left:0; 
+  font-size: 4rem; 
+  width:100%;
+  height: 100%;
+  color:#fff;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+/* Recipe Information*/
+.recipe-information__text {
+  font-size:1.2rem; 
+  text-align: justify;
+}
+.recipe-information__img {
+  width:100%;
+  max-width: 400px;
+  height:auto;
+  display:block; 
+  margin:0 auto; 
+}
+.recipe-information__text + .recipe-information__img {
+  margin-top: 2.5rem;
+}
+
+/* Recipe Ingredients*/
+
+.recipe-ingredients__img {
+  width:100%;
+  max-width: 300px;
+  height:auto;
+  display:block; 
+  margin:0 auto; 
+}
+.recipe__article-list + .recipe-ingredients__img {
+  margin-top: 2.5rem;
 }
